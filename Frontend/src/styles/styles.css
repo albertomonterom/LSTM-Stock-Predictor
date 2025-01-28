@@ -1,0 +1,658 @@
+/* === Estilos globales === */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+.MarginContainer {
+    margin-top: 24px;
+}
+
+.AlignCenter {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: #333;
+}
+
+.CustomLink {
+    color: white;
+    text-decoration: none;
+}
+
+.CustomLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.M-6 {
+    margin: 6px;
+}
+
+/* Centrado comple */
+.full-page-center {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    text-align: center; /* Centrar texto */
+    padding: 20px;
+}
+
+.ver-mas-precios {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-decoration: underline;
+}
+
+.ver-mas-precios:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.future-prediction-button {
+    margin-top: 21px;
+}
+
+/* === Estilo de botones personalizados === */
+button {
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* === Estilo para la tabla en Home === */
+.home-table-container {
+    width: 60%; /* Tabla ocupa el 60% del ancho */
+    margin-top: 20px; /* */
+}
+
+table {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse;
+    color: white; /* Texto en celdas */
+    font-weight: bold; /* negritas */
+}
+
+table th {
+    background-color: #55086c; /* Fondo morado  cabeceras */
+    color: rgb(255, 255, 255); /* Texto blanco  cabeceras */
+    font-weight: bold; /* Negritas */
+}
+
+table td {
+    padding: 12px 15px;
+    text-align: center; /* Centrado del contenido */
+    border: 1px solid #ddd;
+    font-weight: bold; /* Texto en negritas */
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al pasar el ratón */
+}
+
+/* === Estilo de carga (lazy loading) === */
+.suspense-loader {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #66666600;
+}
+
+/* === Login === */
+/* Contenedor principal */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/login.svg') no-repeat center center/cover;
+}
+
+/* Caja del formulario */
+.login-box {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+    width: 350px;
+    font-size: 20px;
+    color: #ffffff; 
+}
+
+/* Título */
+.login-box h1 {
+    font-size: 28px; /* Título más grande */
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Texto descriptivo */
+.login-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Campos de entrada */
+.login-box .form-control {
+    background-color: transparent;
+    border: 1px solid #888;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.login-box .form-control::placeholder {
+    color: #bbb;
+}
+
+/* Botón de login */
+.button-login {
+    width: 100%;
+    background: linear-gradient(90deg, #ff7e5f, #ff416c); /* Degradado */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.button-login:hover {
+    opacity: 0.9;
+}
+
+.button-login:active {
+    transform: scale(0.98); /* Efecto clic */
+}
+
+/* Lista de integrantes */
+.title-members {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.list-names {
+    list-style: none;
+    padding: 0;
+    color: #bbb;
+    text-align: left;
+}
+
+.list-names li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+/* Fondo de pantalla completa para el CRUD principal */
+.crud-container {
+    min-height: 100vh; /* Altura completa de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    /* background: url('../images/crud.svg') no-repeat center center/cover; */
+    padding: 40px 20px;
+    color: #fff;
+}
+.table-container {
+    margin-top: 30px; /* Espacio entre el botón y la tabla */
+    width: 90%;
+    max-width: 1200px; /* Limitar el ancho máximo de la tabla */
+}
+
+/* Registro de nueva empresa */
+.registro-container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../images/create.svg') no-repeat center center/cover;*/
+    padding: 20px;
+    color: #1e293b;
+}
+.registro-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+.registro-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1e293b;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+.button-login {
+    width: 100%;
+    background: linear-gradient(90deg, #ff7e5f, #ff416c); /* Degradado */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+button-login:hover {
+    opacity: 0.9; /* Efecto hover */
+}
+  
+button-login:active {
+    transform: scale(0.98); /* Efecto clic */
+}
+.registro-formulario {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #e5e7eb;
+}
+.registro-formulario .form-control {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #1e293b;
+}
+.registro-botones {
+    display: flex;
+    justify-content: space-between;
+}
+.registro-botones .btn-success {
+    background-color: #10b981;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.registro-botones .btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.5);
+}
+.registro-botones .btn-secondary {
+    background-color: #6b7280;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.registro-botones .btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(108, 117, 125, 0.5);
+}
+
+
+/* Ver empresa */
+.info-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../images/read.svg') no-repeat center center/cover; */
+    padding: 20px;
+    color: #fff;
+}
+
+.info-card {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+
+.info-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.info-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.info-details p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.info-details strong {
+    color: #4caf50;
+}
+
+.info-prices {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.info-prices h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.info-prices ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-prices ul li {
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-prices ul li strong {
+    color: #333;
+}
+
+.info-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.info-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Actualizar empresa */
+.actualizar-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../images/update.svg') no-repeat center center/cover; */
+    padding: 20px;
+    color: #fff;
+}
+
+.update-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-align: center;
+}
+
+.update-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.update-info-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.update-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.3 ease;
+}
+
+.update-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.cancel-button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.3 ease;
+}
+
+.cancel-button:hover {
+    background-color: #bdbdbd;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.update-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/* Inputs */
+input {
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    margin: 8px 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #4caf50; /* Borde verde al enfocar */
+}
+
+/* Button */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #4caf50; /* Verde vibrante */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Un verde más oscuro */
+}
+
+/* Títutlo del Login */
+h1.AlignCenter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+h1.AlignCenterCRUD {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000; /* Blanco suave */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); Sombra para destacar */
+}
+
+h2.title-members {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* CRUD EMPRESAS */
+/* Configuración de la tabla */
+.table-crud {
+    border-collapse: collapse; /* Combina los bordes adyacentes */
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+}
+
+/* Configuración de las celdas (cabecera y contenido) */
+.table-crud th,
+.table-crud td {
+    border: 1px solid transparent; /* Elimina bordes visibles */
+    padding: 8px; /* Espaciado interno en las celdas */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+/* Celdas en la columna de acciones */
+.actions-column {
+    display: flex; /* Activa flexbox */
+    justify-content: space-around; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    gap: 15px; /* Espaciado uniforme entre botones */
+    padding: 0; /* Elimina relleno adicional */
+    border: none; /* Elimina bordes visibles */
+}
+
+/* Estilo de los botones en la columna de acciones */
+.actions-column button {
+    margin: 0; /* Evita márgenes adicionales */
+    padding: 8px 15px; /* Ajusta el espacio interno de los botones */
+    box-shadow: none; /* Elimina sombras que podrían generar líneas visuales */
+    border: none; /* Asegura que no haya bordes extra */
+    font-size: 14px; /* Tamaño de fuente para todos los botones */
+}
+
+/* Botón Ver */
+.btn-crud-ver {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-crud-ver:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+/* Botón Editar */
+.btn-crud-editar {
+    background-color: #ffc107; /* Amarillo */
+    color: black;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-crud-editar:hover {
+    background-color: #e0a800; /* Amarillo más oscuro */
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+/* Botón Eliminar */
+.btn-crud-eliminar {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-crud-eliminar:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+/* Botón Probar */
+.btn-crud-probar {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-crud-probar:hover {
+    background-color: #218838; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+
+/* Evitar líneas debajo de las celdas */
+.table-crud td {
+    border-bottom: none; /* Elimina el borde inferior */
+    border-top: none; /* Elimina el borde superior */
+}

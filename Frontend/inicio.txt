@@ -1,0 +1,31 @@
+poner en index.js una terminal
+npm start
+
+
+
+Checar dentro del archivo package.json:
+"scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+
+  Abrir una termianl en la carpeta:
+  npm install
+  npm run build
+
+  --se escuch en el puerto 9999
+
+  
+para actualizar
+
+npx browserslist@latest
+npm update postcss
+npm install webpack@latest webpack-cli@latest
+
+npm install html-webpack-plugin style-loader css-loader babel-loader --save-dev
+
+
+
+npm install @babel/runtime @babel/plugin-transform-runtime --save
+npm install @babel/core @babel/preset-env @babel/preset-react --save-dev
+npm install babel-loader --save-dev

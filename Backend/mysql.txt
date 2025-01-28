@@ -1,0 +1,18 @@
+Borrar node_modules y archivos de package.json
+
+npm init -y
+npm install sequelize mysql2
+npm install
+
+Agregar en package.json (el archivo que se crea);
+
+"scripts": {
+    "start": "node Aplicacion.js",--------- Esta es la linea que se agrega
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+npm start 
+
+-- ya se estara escuchando en el puerto 9999
+
+npm install cors
