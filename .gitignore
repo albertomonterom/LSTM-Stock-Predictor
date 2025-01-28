@@ -26,3 +26,7 @@ Thumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+.txt
+webpack.config.js
+.babelrc
