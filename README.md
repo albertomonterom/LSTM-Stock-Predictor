@@ -18,16 +18,41 @@ Este proyecto utiliza una **red neuronal de memoria a corto y largo plazo (LSTM)
 
 ## Instalación
 
-1. Clonar este repositorio:
-   ```bash
-   git clone https://github.com/your-username/stock-price-prediction.git
-   cd stock-price-prediction
-2. Instalar dependencias:
-   ```bash
-   npm install
-2. Iniciar el servidor local:
-   ```bash
-   npm start
+1. **Ejecutar el archivo SQL**:
+   - Antes de iniciar cualquier otro servicio, asegúrate de tener la base de datos configurada. Importa el archivo SQL en tu base de datos para crear las tablas necesarias.
+   - Puedes hacerlo ejecutando el archivo en tu sistema de gestión de bases de datos preferido (por ejemplo, MySQL, PostgreSQL, etc.).
+
+2. **Configurar el Backend**:
+   - Navega a la carpeta del backend:
+     ```bash
+     cd backend
+     ```
+   - Instala las dependencias necesarias:
+     ```bash
+     npm install
+     ```
+   - Inicia el servidor backend:
+     ```bash
+     npm start
+     ```
+
+3. **Configurar el Frontend**:
+   - Navega a la carpeta del frontend:
+     ```bash
+     cd frontend
+     ```
+   - Instala las dependencias necesarias:
+     ```bash
+     npm install
+     ```
+   - Inicia el servidor frontend:
+     ```bash
+     npm start
+     ```
+
+4. **Acceder a la Aplicación**:
+   - Una vez que tanto el backend como el frontend estén en funcionamiento, abre tu navegador y ve a la URL correspondiente `http://localhost:5500`.
+   - El backend debería estar disponible en `http://localhost:9999`.
 
 ## Arquitectura del modelo
 - **Capa de Entrada**: Datos de series temporales con las características fecha y precio.
